@@ -37,6 +37,7 @@
 		to_chat(A, "<span class='warning'>You find yourself unable to speak!</span>")
 		return
 	var/list/mob/living/carbon/human/victims_list = list()
+	var/list/mob/living/carbon/human/fail_list = list()
 	for (var/mob/living/carbon/human/adding_victim in oviewers(5, owner))
 		victims_list += adding_victim
 	for(var/mob/living/carbon/human/fail in fail_list)
